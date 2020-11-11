@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+
+{% block body %}
+
+   
+    <img class="avatar" src="{{image_file}}" alt="avatar">
+
+    <form method="POST" action="">
+      <div class="form-group">
+        <input type="text" class="form-control" name="palabra"  placeholder="String">
+      </div>
+      <div class="boton">
+        <button type="submit" class="btn btn-primary">Handle</button>
+      </div>
+    </form>
+
+    <ul>
+      <li class="active" >Palabra: {{my_data[0]}}</li>
+      <li>Reverse: {{my_data[1]}}</li>
+      <li>Length: {{my_data[2]}}</li>
+      <li>Vowels: {{my_data[3]}}</li>
+      <li>Consonants: {{my_data[4]}}</li>
+      <li>Upper: {{my_data[5]}}</li>
+      <li>Lower: {{my_data[6]}}</li>
+      <li>UpDown: {{my_data[7]}}</li>
+      <li>Naive: {{my_data[8]}}</li>
+    </ul>  
+
+{% endblock %}

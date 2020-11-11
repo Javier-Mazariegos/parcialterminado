@@ -1,0 +1,9 @@
+version: "3.7"  
+
+services: 
+    myapp:
+        image: javier20200223/parcialterminado
+        build: 
+            context: .
+        ports:
+            - 5000:5000 
